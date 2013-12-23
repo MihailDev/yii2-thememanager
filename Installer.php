@@ -45,8 +45,8 @@ class Installer extends LibraryInstaller
 
         $this->_themesPath = "themes";
         $extra = $this->composer->getPackage()->getExtra();
-        if(isset($extra[self::EXTRA_THEMEPATH]))
-            $this->_themesPath = $extra[self::EXTRA_THEMEPATH];
+        if(isset($extra[self::EXTRA_THEMESPATH]))
+            $this->_themesPath = $extra[self::EXTRA_THEMESPATH];
 
         $this->_themesPath = $this->getWebPath()."/".$this->_themesPath;
         $this->filesystem->ensureDirectoryExists($this->_themesPath);
