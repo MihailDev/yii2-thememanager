@@ -1,6 +1,6 @@
 {
 	"name": "mihaildev/yii2-thememanager",
-	"description": "The composer plugin for install Yii2 theme project.",
+	"description": "The composer plugin for install Yii2 theme.",
 	"keywords": ["yii", "composer", "theme project installer"],
 	"type": "composer-plugin",
 	"license": "BSD-3-Clause",
