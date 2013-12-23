@@ -48,3 +48,45 @@
 из примера выше мы указали что тему "my/yii2-theme" нужно хранить в папке "basic" то есть путь сгенерируется на основе всех настроек ("webpath"."/"."themespath"."/"."basic")
 
 Удобен для совместного использования вместе с https://github.com/MihailDev/yii2-projectmanager
+
+Пробная установка
+------------------------
+Создаём фаил на сервере composer.json
+```json
+{
+	"minimum-stability": "dev",
+	"require": {
+        "mihaildev/yii2-project-blank": "*",
+        "mihaildev/yii2-test-theme": "*"
+	},
+
+	"extra": {
+		"webpath": "www",
+        "themes": {
+            "mihaildev/yii2-test-theme": "basic"
+        }
+	}
+}
+```
+
+Настраиваем пути! Информацию о настройках проекта смотреть тут https://github.com/MihailDev/yii2-projectmanager
+
+в настройкаж приложения (private/config/web.php) подключаем тему
+```
+$config = [
+    'components' => [
+        //...
+        'view' => [
+            'class' => 'yii\web\View',
+            'theme' => [
+                'basePath' => '@webroot/themes/basic',
+                'baseUrl' => '@web/themes/basic',
+            ],
+        ],
+        //...
+    ],
+    //...
+];
+```
+
+Смотрим!
