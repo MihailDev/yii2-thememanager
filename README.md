@@ -24,7 +24,6 @@
 Создаём фаил composer.json
 ```json
 {
-
 	"require": {
         "my/yii2-project": "*",
         "my/yii2-theme": "*"
