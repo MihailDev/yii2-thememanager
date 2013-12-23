@@ -1,0 +1,27 @@
+{
+	"name": "mihaildev/yii2-thememanager",
+	"description": "The composer plugin for install Yii2 theme project.",
+	"keywords": ["yii", "composer", "theme project installer"],
+	"type": "composer-plugin",
+	"license": "BSD-3-Clause",
+    "minimum-stability" : "dev",
+	"authors": [
+		{
+            "name": "Mihail",
+            "email": "mihail.kucher@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-0": { "yii\\thememanager\\": "" }
+	},
+	"extra": {
+		"class": "yii\\thememanager\\Plugin"
+	},
+	"require": {
+		"composer-plugin-api": "1.0.0",
+	},
+    "require-dev":{
+        "composer/composer": "*"
+    },
+    "target-dir": "yii/thememanager"
+}
